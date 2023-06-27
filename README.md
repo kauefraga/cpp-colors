@@ -1,11 +1,12 @@
 # C++ Colors Library
 
-> 🎨 A collection of namespaces and functions that will help you to style your console outputs.
+> 🎨 A collection of namespaces (ANSI escape code for colors) and functions that will help you to style and bring life to your console outputs.
 
 ### Features
 
 - Ready for use! Drop it in your codebase and be happy!!!
 - Simple and well-written interfaces so you don't have to worry about readability.
+- Support for 3-4 bit colors (standard and high-intensity colors).
 - `Fore` namespace that has ANSI code for the main (more supported) foreground colors.
 - `Back` namespace that has ANSI code for background colors.
 - `Style` namespace that has ANSI code for apply style like bold, italic, underline, and so on.
@@ -72,6 +73,14 @@ The available foreground colors are below:
 - `fore::magenta`
 - `fore::cyan`
 - `fore::white`
+- `fore::bright_black` - Alias: `fore::gray`
+- `fore::bright_red`
+- `fore::bright_green`
+- `fore::bright_yellow`
+- `fore::bright_blue`
+- `fore::bright_magenta`
+- `fore::bright_cyan`
+- `fore::bright_white`
 
 Also, see the usable background colors:
 
@@ -83,6 +92,14 @@ Also, see the usable background colors:
 - `back::magenta`
 - `back::cyan`
 - `back::white`
+- `back::bright_black` - Alias: `back::gray`
+- `back::bright_red`
+- `back::bright_green`
+- `back::bright_yellow`
+- `back::bright_blue`
+- `back::bright_magenta`
+- `back::bright_cyan`
+- `back::bright_white`
 
 Read the doxygen documentation at [code](src/colors.cpp) too.
 
