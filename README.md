@@ -7,6 +7,7 @@
 - Ready for use! Drop it in your codebase and be happy!!!
 - Simple and well-written interfaces so you don't have to worry about readability.
 - `Fore` namespace that has ANSI code for the main (more supported) foreground colors.
+- `Back` namespace that has ANSI code for background colors.
 - `Style` namespace that has ANSI code for apply style like bold, italic, underline, and so on.
 - Written following [Google's c++ style guide](https://google.github.io/styleguide/cppguide.html).
 
@@ -14,7 +15,7 @@
 
 1. Download or clone the repository
 2. Copy the file at `src` into your codebase
-3. See [usage](#usage) and [api](#api)
+3. See [usage](#🤹‍♀️-usage) and [api](#📖-api)
 
 ```bash
 # (1)
@@ -27,7 +28,7 @@ cp src/colors.cpp ../path/to/your/project
 
 You are welcome to open issues and pull requests!
 
-## Usage
+## 🤹‍♀️ Usage
 
 Include the library in your code and then use just the namespaces to output "something" in bold red.
 
@@ -59,7 +60,9 @@ int main() {
 - `style::normal` - Make the text normal.
 - `style::strikethrough` - Puts a horizontal line through the center of the text. Alias: `style::st` *(Not widely supported)*
 
-### Colors (`fore` namespace only)
+### Colors (`fore` and `back` namespaces)
+
+The available foreground colors are below:
 
 - `fore::black`
 - `fore::red`
@@ -69,6 +72,17 @@ int main() {
 - `fore::magenta`
 - `fore::cyan`
 - `fore::white`
+
+Also, see the usable background colors:
+
+- `back::black`
+- `back::red`
+- `back::green`
+- `back::yellow`
+- `back::blue`
+- `back::magenta`
+- `back::cyan`
+- `back::white`
 
 Read the doxygen documentation at [code](src/colors.cpp) too.
 
