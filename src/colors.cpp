@@ -19,6 +19,18 @@ namespace fore {
   const std::string white = "\033[37m";
 }
 
+/// @brief A collection of ANSI escape code to control background colors.
+namespace back {
+  const std::string black = "\033[40m";
+  const std::string red = "\033[41m";
+  const std::string green = "\033[42m";
+  const std::string yellow = "\033[43m";
+  const std::string blue = "\033[44m";
+  const std::string magenta = "\033[45m";
+  const std::string cyan = "\033[46m";
+  const std::string white = "\033[47m";
+}
+
 /// @brief A collection of ANSI escape code to apply styles to output text.
 namespace style {
   const std::string reset = "\033[0m";
