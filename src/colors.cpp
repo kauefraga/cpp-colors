@@ -17,6 +17,18 @@ namespace fore {
   const std::string magenta = "\033[35m";
   const std::string cyan = "\033[36m";
   const std::string white = "\033[37m";
+
+  const std::string bright_black = "\033[90m";
+  const std::string bright_red = "\033[91m";
+  const std::string bright_green = "\033[92m";
+  const std::string bright_yellow = "\033[93m";
+  const std::string bright_blue = "\033[94m";
+  const std::string bright_magenta = "\033[95m";
+  const std::string bright_cyan = "\033[96m";
+  const std::string bright_white = "\033[97m";
+
+  /// @brief An alias for fore::bright_black.
+  const std::string& gray = bright_black;
 }
 
 /// @brief A collection of ANSI escape code to control background colors.
@@ -29,6 +41,18 @@ namespace back {
   const std::string magenta = "\033[45m";
   const std::string cyan = "\033[46m";
   const std::string white = "\033[47m";
+
+  const std::string bright_black = "\033[100m";
+  const std::string bright_red = "\033[101m";
+  const std::string bright_green = "\033[102m";
+  const std::string bright_yellow = "\033[103m";
+  const std::string bright_blue = "\033[104m";
+  const std::string bright_magenta = "\033[105m";
+  const std::string bright_cyan = "\033[106m";
+  const std::string bright_white = "\033[107m";
+
+  /// @brief An alias for back::bright_black.
+  const std::string& gray = bright_black;
 }
 
 /// @brief A collection of ANSI escape code to apply styles to output text.
