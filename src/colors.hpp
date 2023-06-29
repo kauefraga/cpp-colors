@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <iostream>
 
@@ -81,8 +82,10 @@ namespace style {
 /// @brief Prints out a text with a style (color, bold...)
 /// @param text is the message to be displayed.
 /// @param color is an ANSI escape/color code. (Default is style::normal)
-void print(std::string text, const std::string& color = style::normal) {
-  using std::cout;
-
-  cout << color << text << style::reset << '\n';
+void print(
+  const std::string text,
+  const std::string& color = style::normal,
+  const char eol = '\n'
+) {
+  std::cout << color << text << style::reset << eol;
 }
