@@ -82,6 +82,7 @@ namespace style {
 /// @brief Prints out a text with a style (color, bold...)
 /// @param text is the message to be displayed.
 /// @param color is an ANSI escape/color code. (Default is style::normal)
+/// @param eol is an end of line character. (Default is \\n)
 void print(
   const std::string text,
   const std::string& color = style::normal,

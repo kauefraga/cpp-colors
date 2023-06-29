@@ -1,4 +1,4 @@
-#include "colors.cpp"
+#include "colors.hpp"
 
 int main() {
 
