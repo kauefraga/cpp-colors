@@ -5,8 +5,9 @@
 ### Features
 
 - Ready for use! Drop it in your codebase and be happy!!!
+- Just copy the file `colors.hpp` in your project and prettify your outputs.
 - Simple and well-written interfaces so you don't have to worry about readability.
-- Support for 3-4 bit colors (standard and high-intensity colors).
+- Support for 4 bit colors (standard and high-intensity colors).
 - `Fore` namespace that has ANSI code for the main (more supported) foreground colors.
 - `Back` namespace that has ANSI code for background colors.
 - `Style` namespace that has ANSI code for apply style like bold, italic, underline, and so on.
@@ -31,7 +32,9 @@ You are welcome to open issues and pull requests!
 
 ## 🤹‍♀️ Usage
 
-Include the library in your code and then use just the namespaces to output "something" in bold red.
+To have access to the cpp-colors features you need to include the file `src/colors.hpp` in your codebase.
+
+Example: include the library in your code and then use the namespaces to output "something" in bold red.
 
 ```cpp
 // Already includes <iostream> and <string>
@@ -49,7 +52,7 @@ int main() {
 
 ### Functions
 
-- `print(string text, string color)` - Prints out a text with a style (color, bold...)
+- `print(string text, string color, char eol)` - Prints out a text with a style (color, bold...)
 
 ### Modifiers (`style` namespace)
 
@@ -101,7 +104,7 @@ Also, see the usable background colors:
 - `back::bright_cyan`
 - `back::bright_white`
 
-Read the doxygen documentation at [code](src/colors.cpp) too.
+Read the doxygen documentation at [code](src/colors.hpp) too.
 
 ## 🧻 Resources
 
