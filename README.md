@@ -38,7 +38,7 @@ Example: include the library in your code and then use the namespaces to output 
 
 ```cpp
 // Already includes <iostream> and <string>
-#include "../path/to/the/library/colors.cpp"
+#include "../path/to/cpp-colors/colors.hpp"
 
 int main() {
   std::cout << style::bold << fore::red << "something" << '\n';
